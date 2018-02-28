@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/**
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+ */
+-->
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneOuter" maxHeight="600.0" maxWidth="800.0" onMouseClicked="#restartBut" prefHeight="600.0" prefWidth="800.0" stylesheets="@fxml1.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML1Controller">
+   <children>
+      <AnchorPane prefHeight="150.0" prefWidth="175.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="275.0">
+         <children>
+            <Label prefHeight="150.0" prefWidth="175.0" stylesheets="@fxml1.css" text="Game Tic-Tac-Toe creator: Jacek Byzdra jacekbwwa@gmail.com " textFill="#28ff00" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPaneInner" maxHeight="300.0" maxWidth="375.0" prefHeight="300.0" prefWidth="375.0" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <GridPane fx:id="gridPaneGame" maxHeight="300.0" maxWidth="375.0" prefHeight="300.0" prefWidth="375.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="c00" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView00" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c01" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView01" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c02" layoutX="144.0" layoutY="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView02" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c10" layoutX="277.0" layoutY="10.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView10" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c11" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView11" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c12" layoutX="144.0" layoutY="110.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView12" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c20" layoutX="277.0" layoutY="110.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView20" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c21" layoutX="10.0" layoutY="210.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView21" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="c22" layoutX="144.0" layoutY="210.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fx:id="ImageView22" fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <GridPane fx:id="gridPaneOptionLabel" layoutX="160.0" layoutY="7.0" prefHeight="15.0" prefWidth="400.0" AnchorPane.topAnchor="7.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="21.0" prefWidth="400.0" text="Tic-Tac-Toe Game.  Choose  players and the sign .........." textFill="YELLOW">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="gridPanePlayersRB" prefHeight="75.0" prefWidth="340.0" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <RadioButton fx:id="K00" mnemonicParsing="false" text="Player1" textFill="YELLOW">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K01" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="X" textFill="YELLOW" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K02" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="O" textFill="YELLOW" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K10" mnemonicParsing="false" text="Player2" textFill="YELLOW" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K20" mnemonicParsing="false" text="Comp" textFill="YELLOW" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K03" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="T" textFill="YELLOW" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K11" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="+" textFill="YELLOW" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K12" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="Q" textFill="YELLOW" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K13" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="V" textFill="YELLOW" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K21" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="#" textFill="YELLOW" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K22" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="\@" textFill="YELLOW" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="K23" mnemonicParsing="false" prefHeight="21.0" prefWidth="99.0" text="H" textFill="YELLOW" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </RadioButton>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="115.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="115.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="112.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="gridPaneRestart" prefHeight="60.0" prefWidth="122.0" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="50.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="restartButton" fx:id="restartButton" mnemonicParsing="false" prefHeight="25.0" stylesheets="@fxml1.css" text="Restart" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Button>
+            <Button id="newGameButton" fx:id="newGameButton" mnemonicParsing="false" onMouseClicked="#buttonNewGameClick" prefHeight="25.0" stylesheets="@fxml1.css" text="New Game">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane fx:id="gridPaneInfoMove" layoutX="41.0" prefHeight="75.0" prefWidth="100.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="50.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="label00" prefHeight="21.0" prefWidth="100.0" textFill="YELLOW">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label10" prefHeight="21.0" prefWidth="100.0" textFill="YELLOW" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label20" prefHeight="21.0" prefWidth="100.0" textFill="YELLOW" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="gridPaneCounter" prefWidth="340.0" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="475.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelPlayer1" prefHeight="21.0" prefWidth="63.0" text="Player 1" textFill="YELLOW" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelPlayer2" prefHeight="21.0" prefWidth="63.0" text="Player 2" textFill="YELLOW" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelComp" prefHeight="21.0" prefWidth="63.0" text="Comp" textFill="YELLOW" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelPlayer1Stats" prefWidth="63.0" textFill="YELLOW" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelPlayer2Stats" prefWidth="63.0" textFill="YELLOW" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCompStats" prefWidth="63.0" textFill="YELLOW" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin><font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="gridPaneLabelStats" prefWidth="340.0" AnchorPane.leftAnchor="155.0" AnchorPane.topAnchor="540.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelGameStats" prefWidth="340.0" textFill="YELLOW">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

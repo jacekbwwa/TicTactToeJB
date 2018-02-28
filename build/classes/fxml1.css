@@ -1,0 +1,40 @@
+/**
+ *
+ * @author Jacek Byzdra
+ * email: jacekbwwa@gmail.com
+ */
+
+
+.root{ -fx-background-color:#000000 ;}
+
+#restartButton {
+    -fx-background-color:#28c4ff;
+}
+
+#newGameButton {
+    -fx-background-color:#28ff00;
+}
+
+
+/*
+*  #03CEC2  
+* #002C85
+*#DE3974
+*#EFC239
+*#FFFFDD
+*#FFFFEE
+*#CCFFDD
+*#CCFFEE
+*#CCFFFF
+*#E0FFFF
+*#B0E0E6
+*#008080
+*#FF3F80
+*#3E50B4
+^#6EC6F1
+*#B0134B
+*#9C0038
+*#.button{-fx-background-color: #FFFFFF;}
+*/
+
+
