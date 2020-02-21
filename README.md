@@ -43,13 +43,13 @@
 - CSS  
 
 ## Code Explaination
-The code is split in several modules which plays diiferent role in the game . The OOP  is used.
-- Cell.java: keeps data of Board's cells state, movement of players, and priorities weights for computer when is in the game  
-- Model.java: has methods for players  
-- Player.java: keeps the player's state, choosed players in the game, statistics of wins  
-- FXML1.fxml with FXML1Controller.java  handle graphic user interface displaying board of the game, 3x3 grid, symbols used, stats and restart and new game buttons  
+The code is split in several modules which plays different role in the game . The OOP  is used.
+- Cell.java: keeps data of Board's cells state, movement of players, and priorities weights for computer  move when Comp player  is in the game  
+- Model.java:  keep methods , functions for players  
+- Player.java: keeps the player's state, choosed players in the game, statistics who wins  
+- FXML1.fxml with FXML1Controller.java  handle graphic user interface displaying board of the game, 3x3 grid board, symbols used, stats, restart and new game buttons  
 
-# How to run 
+## How to run 
 **Compiling with IDE**   
 
 - Clone the repository  
